@@ -1,0 +1,67 @@
+<!--miniprogram/pages/phone/phone.wxml-->
+<view class='container'>
+<view class='top'>
+  <view class='t_left'>课程顾问</view>
+  <navigator url="phone2/phone2" hover-class="none">
+    <view class='t_right'>查看全部></view>
+  </navigator>
+</view>
+
+<view class='middle'>
+  <view class='text'>
+    <view class='box' wx:for="{{arr}}" wx:key="{{index}}">
+      <image src="{{item.img}}" class='left' />
+      <navigator url="./phone1/phone1?img={{item.img}}&title={{item.title}}&desc={{item.desc}}" hover-class="none">
+        <view class='t_middle'>
+          <text class='txt1'>{{item.title}}</text>
+          <text class='txt2'>{{item.desc}}</text>
+        </view>
+      </navigator>
+      <image src="../images/phone/telephone.png" class="right" bindtap='call' data-phone="{{item.phone}}" />
+    </view>
+  </view>
+</view>
+<!-- 咨询我们 -->
+<view class='consult'>
+  <text class='left_line'></text>
+  <text class='consult_text'>咨询我们</text>
+  <text class='right_line'></text>
+</view>
+<view class='content'>
+  <view class='c_text'>
+    <text class='c_txt1'>*</text>
+    <text class='c_txt2'>姓名：</text>
+  </view>
+  <input type='text' maxlength='80' placeholder='请输入您的姓名' class='c_input' />
+  <view class='c_text'>
+    <text class='c_txt1'>*</text>
+    <text class='c_txt2'>电话：</text>
+  </view>
+  <input type='text' maxlength='80' placeholder='请输入您的电话' class='c_input' />
+
+  <view class='c_text'>
+    <text class='c_txt1'>*</text>
+    <text class='c_txt2'>意向课程：</text>
+  </view>
+  <view class='c_text1'>
+    <view class='c_txt3'>游戏课程</view>
+    <view class='c_txt3'>音乐课堂</view>
+    <view class='c_txt3'>绘本课堂</view>
+    <view class='c_txt3'>科学课堂</view>
+  </view>
+
+  <view class='c_text'>
+    <text class='c_txt1'>*</text>
+    <text class='c_txt2'>留言：</text>
+  </view>
+
+  <view class='c_message'>
+    <textarea placeholder='请输入您想定制的内容' maxlength='999' class='textarea'></textarea>
+  </view>
+
+  <view class='c_text2'>
+    <button class='c_btn'>马上提交</button>
+  </view>
+</view>
+
+</view>

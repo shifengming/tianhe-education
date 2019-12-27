@@ -1,0 +1,69 @@
+<!--miniprogram/pages/experience/experience.wxml-->
+<view class='container'>
+<view class='book'>
+  <view class='swiper-tab'>
+    <view  wx:for="{{arr}}" wx:key="index" class="swiper-tab-list {{currentTab==index ? 'active' : ''}}" data-current="{{index}}" bindtap='swichNav'>{{ item }}</view>
+  </view>
+  <view class='item' style='height: {{second_height}}' duration='300' bindchange='bindChange'>
+    <view current="{{currentTab}}">
+      <view wx:if="{{currentTab === 0}}">
+        <view class='news'>
+          <view class='box' wx:for="{{arrNews}}" wx:key="index" bindtap='toDetail1' data-obj="{{item}}">
+            <view class='left'>
+              <text class='title'>{{ item.title }}</text>
+              <text class='desc'>{{ item.desc }}</text>
+              <text class='time'>{{ item.time }}</text>
+            </view>
+            <view class='right'>
+              <image src="{{ item.img }}" class="imgs" />
+            </view>
+          </view>
+        </view>
+      </view>
+      <view wx:if="{{currentTab === 1}}">
+        <view class='news'>
+          <view class='box' wx:for="{{arrNews1}}" wx:key="index" bindtap='toDetail2' data-obj="{{item}}">
+            <view class='left'>
+              <text class='title'>{{ item.title }}</text>
+              <text class='desc'>{{ item.desc }}</text>
+              <text class='time'>{{ item.time }}</text>
+            </view>
+            <view class='right'>
+              <image src="{{ item.img }}" class="imgs" />
+            </view>
+          </view>
+        </view>
+      </view>
+      <view wx:if="{{currentTab === 2}}">
+        <view class='news'>
+          <view class='box' wx:for="{{arrNews2}}" wx:key="index" bindtap='toDetail3' data-obj="{{item}}">
+            <view class='left'>
+              <text class='title'>{{ item.title }}</text>
+              <text class='desc'>{{ item.desc }}</text>
+              <text class='time'>{{ item.time }}</text>
+            </view>
+            <view class='right'>
+              <image src="{{ item.img }}" class="imgs" />
+            </view>
+          </view>
+        </view>
+      </view>
+      <view wx:if="{{currentTab === 3}}">
+        <view class='news'>
+          <view class='box' wx:for="{{arrNews3}}" wx:key="index" bindtap='toDetail4' data-obj="{{item}}">
+            <view class='left'>
+              <text class='title'>{{ item.title }}</text>
+              <text class='desc'>{{ item.desc }}</text>
+              <text class='time'>{{ item.time }}</text>
+            </view>
+            <view class='right'>
+              <image src="{{ item.img }}" class="imgs" />
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+</view>
+</view>
+
+</view>

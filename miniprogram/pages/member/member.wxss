@@ -1,0 +1,84 @@
+/* miniprogram/pages/member/member.wxss */
+.container{
+  width: 100%;
+}
+.top{
+  display: flex;
+  justify-content: center;
+  margin-top: 60rpx;
+}
+.t_pic{
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+}
+.head{
+  margin-top: 34rpx;
+}
+.h_name{
+  font-size: 45rpx;
+  display: flex;
+  justify-content: center;
+}
+.h_phone{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 35rpx;
+}
+.h_img{
+  height: 40rpx;
+  width: 40rpx;
+}
+.h_txt1{
+  font-size: 30rpx;
+  font-weight: lighter;
+  color: #BEBEBE;
+}
+.h_other{
+  display: flex;
+  justify-content: space-between;
+  margin: 20rpx 130rpx 10rpx 130rpx;
+  height: 100rpx;
+  
+}
+.h_text{
+  margin: 25rpx;
+}
+.h_txt2{
+  font-size: 25rpx;
+  color: #ff0000;
+}
+.h_txt3{
+  font-size: 25rpx;
+  color: #4f4f4f;
+}
+.middle{
+  width: 750rpx;
+  height:auto;
+}
+.m_content{
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.m_other{
+  background-color: #FFFFFF;
+  height: 220rpx;
+  width: 190rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.m_shopping{
+  height: 50px;
+  width: 50px;
+}
+.m_txt{
+  font-size: 25rpx;
+  font-weight: lighter;
+  padding-top: 10rpx;
+}

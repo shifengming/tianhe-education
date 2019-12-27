@@ -1,0 +1,4 @@
+/* pages/shopping/shopping.wxss */
+.container{
+  width: 750rpx;
+}

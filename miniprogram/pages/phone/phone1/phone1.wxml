@@ -1,0 +1,27 @@
+<view class='top'>
+  <view class='doc_detail'>
+    </view>
+    </view>
+    <!-- <view class='doc_top'>
+      <image src="{{pic}}" class='avator' />
+      <view class='doc_right'>
+        <text class='doc_name'>{{title}}</text>
+        <view class='doc_posi'>
+          <text class='doc_po'>{{position}}</text>
+          <image src='../../images/star.png' class='img_star' />
+          <image src='../../images/star.png' class='img_star' />
+          <image src='../../images/star.png' class='img_star' />
+          <image src='../../images/star.png' class='img_star' />
+          <image src='../../images/star.png' class='img_star' />
+        </view>
+      </view>
+    </view>
+    <view class='doc_desc'>
+      <text class='desc'>{{desc}}</text>
+    </view>
+    <view class='footer'>
+      <image src='../../images/hospital.png' class='f_img' />
+      <text class='f_title'>武汉东亭医院</text>
+    </view>
+  <!-- </view>
+</view> --> -->

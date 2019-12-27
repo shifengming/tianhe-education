@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor":"#fff",
+  "navigationBarTitleText":"早教心得",
+  "navigationBarTextStyle":"black",
+  "backgroundColor":"#eeeeee",
+  "backgroundTextStyle":"light",
+  "enablePullDownRefresh": true
+}

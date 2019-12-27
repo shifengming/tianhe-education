@@ -1,0 +1,69 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/index1/index1",
+    "pages/index/index2/index2",
+    "pages/index/index3/index3",
+    "pages/experience/experience",
+    "pages/phone/phone",
+    "pages/experience/all/all",
+    "pages/experience/exercise/exercise",
+    "pages/experience/interest/interest",
+    "pages/shopping/shopping",
+    "pages/member/member",
+    "pages/phone/phone1/phone1",
+    "pages/phone/phone2/phone2",
+    "pages/member/collection/collection",
+    "pages/member/comment/comment",
+    "pages/member/order/order",
+    "pages/member/shopping/shopping",
+    "pages/member/voucher/voucher",
+    "pages/member/student/student"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "教育培训",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "borderStyle": "white",
+    "color": "#000",
+    "backgroundColor": "#A2D8FF",
+    "selectedColor":"#FFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/index/index1.png",
+        "selectedIconPath": "pages/images/index/index2.png"
+      },
+      {
+        "pagePath": "pages/experience/experience",
+        "text": "资讯",
+        "iconPath": "pages/images/experience/experience1.png",
+        "selectedIconPath": "pages/images/experience/experience2.png"
+      },
+      {
+        "pagePath": "pages/phone/phone",
+        "text": "咨询",
+        "iconPath": "pages/images/phone/phone1.png",
+        "selectedIconPath": "pages/images/phone/phone2.png"
+      },
+      {
+        "pagePath": "pages/shopping/shopping",
+        "text": "商城",
+        "iconPath": "pages/images/shopping/shopping1.png",
+        "selectedIconPath": "pages/images/shopping/shopping2.png"
+      },
+      {
+        "pagePath": "pages/member/member",
+        "text": "会员中心",
+        "iconPath": "pages/images/member/member1.png",
+        "selectedIconPath": "pages/images/member/member2.png"
+      }
+    ]
+  }
+}

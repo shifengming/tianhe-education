@@ -1,0 +1,79 @@
+<view class='container'>
+  <view class='swipercontent'>
+    <swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" current="{{swiperCurrent}}" bindchange="swiperChange">
+      <block wx:for="{{imgUrls}}" wx:key="1">
+        <swiper-item>
+          <image bindtap='click_swiper' src="{{item}}" data-current='{{swiperCurrent}}' width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <!-- 自定义Dots -->
+    <view class="dots">
+      <block wx:for="{{imgUrls}}" wx:key="unique">
+        <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+      </block>
+    </view>
+  </view>
+</view>
+<view class='line'></view>
+<view class='head'>
+  <view wx:for="{{obj}}" wx:key="{{index}}">
+    <image src='{{item.img}}' class='h_img' />
+    <text class='h_txt1'>{{item.txt}}</text>
+  </view>
+</view>
+<view class='line'></view>
+<!-- 服务分类 -->
+<view class='service'>
+  <text class='left_line'></text>
+  <text class='service_text'>服务分类</text>
+  <text class='right_line'></text>
+</view>
+<view class='s_middle'>
+  <view wx:for="{{objs}}" wx:key="{{index}}">
+    <image src='{{item.img}}' class='s_img' />
+    <view class='s_txt'>{{item.txt}}</view>
+  </view>
+</view>
+<view class='line'></view>
+<view class='s_end'>
+  <image src='../images/index/service.png' class='s_imgs' />
+</view>
+<view class='line'></view>
+<!-- 服务优势 -->
+<view class='service'>
+  <text class='left_line'></text>
+  <text class='service_text'>服务优势</text>
+  <text class='right_line'></text>
+</view>
+<view class='advantage'>
+  <view class='adv_head'>
+    <image src='../images/index/adv_head.png' class='adv_img' />
+    <view class='adv_text'>
+      <text class='adv_txt1'>培养快乐幸福的孩子</text>
+      <text class='adv_txt2'>从一生的角度，思考童年教育。在有准备的环境中，通过玩耍和模仿进行学习；尊重还在的独特，与孩子的天赋合作。</text>
+    </view>
+  </view>
+  <view class='adv_end'>
+    <image src='../images/index/adv_end.png' class='adv_imgs' />
+  </view>
+</view>
+<view class='line'></view>
+<!-- 教学环境 -->
+<view class='service'>
+  <text class='left_line'></text>
+  <text class='service_text'>教学环境</text>
+  <text class='right_line'></text>
+</view>
+<view class='environment'>
+  <view class='env_head'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" display-multiple-items="3">
+      <block wx:for="{{imgUrl}}" wx:key="1">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="100" height="60" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='line'></view>
+</view>

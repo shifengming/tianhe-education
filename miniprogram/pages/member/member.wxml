@@ -1,0 +1,35 @@
+<!--miniprogram/pages/member/member.wxml-->
+<view class='container'>
+  <view class='top'>
+    <image src='../images/member/photo.jpg' class='t_pic' />
+  </view>
+  <view class='head'>
+    <view class='h_name'>Brittary Matthews</view>
+    <view class='h_phone'>
+      <image src='../images/member/phone.png' class='h_img' />
+      <text class='h_txt1'>绑定手机：18304090698</text>
+    </view>
+    <view class='h_other'>
+      <view class='h_text'>
+        <text class='h_txt2'>剩余课程：</text>
+        <text class='h_txt3'>8节</text>
+      </view>
+      <view class='h_text'>
+        <text class='h_txt2'>可用积分：</text>
+        <text class='h_txt3'>2000积分</text>
+      </view>
+    </view>
+  </view>
+  <view class='middle'>
+    <view class='m_content'>
+      <view wx:for="{{obj}}" wx:key='{{index}}'>
+        <navigator url="{{ item.url }}" hover-class="none">
+          <view class='m_other'>
+            <image src='{{item.img}}' class='m_shopping' />
+            <text class='m_txt'>{{item.txt}}</text>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

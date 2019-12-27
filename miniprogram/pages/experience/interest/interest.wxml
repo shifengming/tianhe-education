@@ -1,0 +1,3 @@
+<text class='txt1'>{{obj.title}}</text>
+<text class='txt1'>{{obj.desc}}</text>
+<image src='{{img}}' class='imgs'/>
